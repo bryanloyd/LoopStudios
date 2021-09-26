@@ -1,9 +1,13 @@
-function App() {
+import Header from "./components/HeaderComponent";
+import Showcase from "./components/ShowcaseComponent";
+
+const App = () => {
   return (
     <div>
-      <h1>LoopStudios Landing Page</h1>
+      <Header />
+      <Showcase />
     </div>
   );
-}
+};
 
 export default App;

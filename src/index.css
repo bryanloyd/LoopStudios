@@ -18,5 +18,74 @@ html {
 }
 
 body {
+  background-color: #767676;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Alata", sans-serif;
   font-size: 1.5rem;
+}
+
+button {
+  background-color: transparent;
+  font-family: "Alata", sans-serif;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.header nav {
+  display: none;
+}
+
+.header .menu-btn {
+  padding: 20px;
+}
+
+.header .menu-btn .bar {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 0 0 5px;
+}
+
+.showcase {
+  background: url("./images/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.showcase .overlay {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  padding: 0 20px;
+}
+
+.showcase .overlay h1 {
+  color: #ffffff;
+  font-size: 4.2rem;
+  line-height: 1.1;
+  border: 1px solid #ffffff;
+  padding: 20px;
 }
