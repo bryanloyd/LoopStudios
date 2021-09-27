@@ -36,6 +36,17 @@ h6 {
   letter-spacing: 0.25rem;
 }
 
+h2 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
 p {
   font-family: "Alata", sans-serif;
   font-size: 1.5rem;
@@ -105,11 +116,60 @@ button {
   text-align: center;
 }
 
+.interactive h2 {
+  padding-bottom: 25px;
+}
+
 .interactive-text {
   padding: 20px 50px;
 }
 
-.interactive .interactive-text h2 {
-  font-size: 3.2rem;
-  line-height: 3.2rem;
+/* Creations Component */
+.creations-mobile {
+  padding: 0 20px 50px;
+}
+
+.creations-mobile h2 {
+  padding-bottom: 30px;
+}
+
+.creations-mobile article {
+  position: relative;
+}
+
+.creations-mobile h3 {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 0 0 20px 20px;
+  color: var(--white);
+  width: 150px;
+}
+
+.creations-mobile section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.creations-mobile .btn-container {
+  text-align: center;
+}
+
+.creations-mobile .btn {
+  margin: 50px 0;
+  border: 2px solid var(--black);
+  width: 160px;
+  height: 50px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.creations-mobile .btn:hover {
+  background-color: var(--black);
+  color: var(--white);
 }

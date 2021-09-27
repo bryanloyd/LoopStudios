@@ -1,3 +1,4 @@
+import Creations from "./components/CreationsComponent";
 import Header from "./components/HeaderComponent";
 import Interactive from "./components/InteractiveComponent";
 import Showcase from "./components/ShowcaseComponent";
@@ -7,7 +8,8 @@ const App = () => {
     <div>
       <Header />
       <Showcase />
-      <Interactive />;
+      <Interactive />
+      <Creations />;
     </div>
   );
 };

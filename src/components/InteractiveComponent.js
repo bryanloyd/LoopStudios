@@ -5,11 +5,11 @@ const Interactive = () => {
   return (
     <section className="interactive">
       <div>
-        <img src={interactiveImg} alt="interactive player" />;
+        <img src={interactiveImg} alt="interactive player" />
       </div>
 
       <div className="interactive-text">
-        <h2>The leader interactive VR</h2>
+        <h2>The leader in interactive VR</h2>
         <p>
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best companies around the globe. Our
