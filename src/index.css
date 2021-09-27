@@ -18,7 +18,11 @@ html {
 }
 
 body {
-  background-color: #767676;
+  background-color: var(--white);
+}
+
+img {
+  width: 100%;
 }
 
 h1,
@@ -29,18 +33,21 @@ h5,
 h6 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
 p {
   font-family: "Alata", sans-serif;
   font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--dark-gray);
 }
 
 button {
   background-color: transparent;
   font-family: "Alata", sans-serif;
   border: 0;
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
 }
 
 .header {
@@ -58,15 +65,17 @@ button {
 
 .header .menu-btn {
   padding: 20px;
+  cursor: pointer;
 }
 
 .header .menu-btn .bar {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: var(--white);
   margin: 0 0 5px;
 }
 
+/* Showtime Component */
 .showcase {
   background: url("./images/image-hero.jpg");
   background-repeat: no-repeat;
@@ -83,9 +92,24 @@ button {
 }
 
 .showcase .overlay h1 {
-  color: #ffffff;
+  color: var(--white);
   font-size: 4.2rem;
   line-height: 1.1;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   padding: 20px;
+}
+
+/* Interactive Component */
+.interactive {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.interactive-text {
+  padding: 20px 50px;
+}
+
+.interactive .interactive-text h2 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
 }
