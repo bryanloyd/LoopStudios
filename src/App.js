@@ -1,4 +1,5 @@
 import Creations from "./components/CreationsComponent";
+import CreationsDesktop from "./components/CreationsDesktopComponent";
 import Footer from "./components/FooterComponent";
 import Header from "./components/HeaderComponent";
 import Interactive from "./components/InteractiveComponent";
@@ -11,6 +12,7 @@ const App = () => {
       <Showcase />
       <Interactive />
       <Creations />
+      <CreationsDesktop />
       <Footer />
     </div>
   );

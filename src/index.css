@@ -88,7 +88,7 @@ button {
 
 /* Showtime Component */
 .showcase {
-  background: url("./images/image-hero.jpg");
+  background: url("./images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,15 +104,16 @@ button {
 
 .showcase .overlay h1 {
   color: var(--white);
-  font-size: 4.2rem;
-  line-height: 1.1;
+  font-size: 4rem;
+  line-height: 3.8rem;
   border: 1px solid var(--white);
+  width: 327px;
   padding: 20px;
 }
 
 /* Interactive Component */
 .interactive {
-  padding: 50px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -121,10 +122,14 @@ button {
 }
 
 .interactive-text {
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 
 /* Creations Component */
+.creations-desktop {
+  display: none;
+}
+
 .creations-mobile {
   padding: 0 20px 50px;
 }
@@ -136,6 +141,11 @@ button {
 .creations-mobile article {
   position: relative;
 }
+
+/* .creations-mobile article img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+  url{image};
+} */
 
 .creations-mobile h3 {
   position: absolute;
@@ -150,6 +160,13 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.creations-mobile article:hover,
+h3:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  color: var(--black);
 }
 
 .creations-mobile .btn-container {
@@ -205,4 +222,118 @@ button {
   margin-right: 25px;
   list-style: none;
   font-size: 2.5rem;
+}
+
+/* Desktop Media Queries */
+@media (min-width: 768px) {
+  .footer {
+    text-align: initial;
+    padding: 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer img {
+    width: 144px;
+  }
+
+  .footer ul {
+    display: flex;
+  }
+
+  .footer ul li {
+    padding-right: 25px;
+    list-style: none;
+  }
+
+  .footer ul li button {
+    cursor: pointer;
+  }
+
+  .footer .social {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  .creations-mobile {
+    display: none;
+  }
+
+  .creations-desktop {
+    display: block;
+    padding: 0 20px;
+    margin: 150px;
+  }
+
+  .creations-desktop .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .creations-desktop .btn-container {
+    text-align: center;
+  }
+
+  .creations-desktop .btn {
+    margin: 50px 0;
+    border: 2px solid var(--black);
+    width: 160px;
+    height: 50px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+
+  .creations-desktop .btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .creations-desktop section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+  .creations-desktop article {
+    position: relative;
+  }
+
+  .creations-desktop article:hover {
+    opacity: 0.3;
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .creations-desktop h3 {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 0 0 20px 20px;
+    color: var(--white);
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase {
+    background: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .showcase .overlay h1 {
+    width: 650px;
+    font-size: 7.2rem;
+    line-height: 7rem;
+    margin-top: 100px;
+  }
 }

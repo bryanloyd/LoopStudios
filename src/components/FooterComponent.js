@@ -45,9 +45,7 @@ const Footer = () => {
               <FaInstagram />
             </li>
           </ul>
-        </div>
 
-        <div>
           <p>&copy; 2021 LoopStudios. All Rights Reserved.</p>
         </div>
       </footer>
